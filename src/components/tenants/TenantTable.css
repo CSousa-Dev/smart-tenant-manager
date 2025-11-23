@@ -1,0 +1,133 @@
+.tenant-table-container {
+  overflow-x: auto;
+  background: var(--bg-card);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.tenant-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tenant-table thead {
+  background: var(--bg-secondary);
+}
+
+.tenant-table th {
+  padding: 1rem;
+  text-align: left;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--border);
+}
+
+.tenant-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.tenant-table th.sortable:hover {
+  background: var(--bg-tertiary);
+}
+
+.sort-indicator {
+  margin-left: 0.5rem;
+  color: var(--primary);
+}
+
+.tenant-table td {
+  padding: 1rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+}
+
+.tenant-table tbody tr {
+  transition: background 0.2s;
+}
+
+.tenant-table tbody tr:hover {
+  background: var(--bg-secondary);
+}
+
+.tenant-id-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.copy-id-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.25rem;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.copy-id-btn:hover {
+  opacity: 1;
+}
+
+.tenant-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.tenant-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-primary);
+  flex: 1;
+  min-width: 0;
+}
+
+.tenant-name-badge {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(99, 102, 241, 0.25);
+}
+
+.tenant-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .tenant-table-container {
+    border-radius: 8px;
+  }
+
+  .tenant-table {
+    font-size: 0.85rem;
+  }
+
+  .tenant-table th,
+  .tenant-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .tenant-actions {
+    flex-direction: column;
+  }
+
+  .tenant-actions button {
+    width: 100%;
+  }
+}
+

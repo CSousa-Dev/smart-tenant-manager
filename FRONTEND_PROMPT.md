@@ -6,7 +6,11 @@ Preciso criar uma interface completa em React (TypeScript) para gerenciar tenant
 
 ## API Base URL
 
+<<<<<<< HEAD
 A API está rodando em: `http://localhost:3002/api` (ou configurável via variável de ambiente `VITE_API_URL` ou `REACT_APP_API_URL`)
+=======
+A API está rodando em: `http://localhost:3000/api` (ou configurável via variável de ambiente `VITE_API_URL` ou `REACT_APP_API_URL`)
+>>>>>>> 6157063 (feat: implementa interface completa de gerenciamento de tenants)
 
 ## Estrutura de Resposta Padrão da API
 
