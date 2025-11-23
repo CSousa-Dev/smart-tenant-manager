@@ -10,7 +10,7 @@ dotenv.config();
 export const config = {
   // Server
   nodeEnv: process.env.NODE_ENV || 'development',
-  port: parseInt(process.env.PORT || '3002', 10),
+  port: parseInt(process.env.PORT || '3020', 10),
   
   // CORS
   corsOrigin: process.env.CORS_ORIGIN || '*',
